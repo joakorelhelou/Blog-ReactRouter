@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class PostIndex extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 Post Index
-                </div>
+            </div>
         );
     }
 }
