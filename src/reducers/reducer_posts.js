@@ -11,9 +11,9 @@ export default function (state = {}, action) {
             newState[post.id] = post;
             return newState;*/
             //Create a new key and asign it the data
-            return { ...state, [action.payload.data.id]: action.payload.data }
+            return { ...state, [action.payload.id]: action.payload }
         case FETCH_POSTS:
-            return _.mapKeys(action.payload.data, 'id');
+            return _.mapKeys(action.payload, 'id');
         case DELETE_POST:
             //If state object has a key of post.id, return a new object without that id
             return _.omit(state, action.payload);

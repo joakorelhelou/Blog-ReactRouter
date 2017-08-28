@@ -40,9 +40,9 @@ class PostIndex extends Component {
     }
 }
 
-function mapStateToPropes(state) {
+function mapStateToProps(state) {
     return { posts: state.posts }
 }
 
 // This is the same as designing a function
-export default connect(mapStateToPropes, { fetchPosts })(PostIndex);
+export default connect(mapStateToProps, { fetchPosts })(PostIndex);
